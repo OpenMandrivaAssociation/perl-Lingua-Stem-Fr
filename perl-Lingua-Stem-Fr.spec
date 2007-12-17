@@ -15,7 +15,6 @@ Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{version}
 BuildRequires:  perl-devel
 %endif
 BuildArch:  noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 This module use the a modified version of the Porter Stemming Algorithm to
