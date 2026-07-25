@@ -2,14 +2,14 @@
 %define upstream_version 0.02
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Perl French Stemming
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Lingua/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Lingua-Stem-Fr
+Source0:	https://cpan.metacpan.org/authors/id/S/SD/SDP/Lingua-Stem-Fr-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
