@@ -1,15 +1,13 @@
 %define upstream_name    Lingua-Stem-Fr
-%define upstream_version 0.02
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.02
+Release:	6
 
 Summary:	Perl French Stemming
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Lingua-Stem-Fr
-Source0:	https://cpan.metacpan.org/authors/id/S/SD/SDP/Lingua-Stem-Fr-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SD/SDP/Lingua-Stem-Fr-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +26,7 @@ module by Benjamin Franz. This french version is based too, on the work of Aldo
 Calpini (Italian Version)
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -48,9 +46,7 @@ make test
 %changelog
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.20.0-1mdv2010.0
 + Revision: 403389
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.02-4mdv2009.0
+- rebuild using %0.02 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.02-4mdv2009.0
 + Revision: 241608
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
